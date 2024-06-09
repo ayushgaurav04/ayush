@@ -1,0 +1,287 @@
+/* this is for the css reset */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+position: relative;
+display: flex;
+width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    justify-content: space-between;
+    padding: 3vw;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.789);
+   
+}
+.navbar .logo{
+    font-size: 3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+}
+.navbar .options{
+    gap: 2.5vw;
+    display: flex;
+    font-size: 1.45vw;
+    text-decoration: none;
+    align-items: center;
+}
+.navbar .options a{
+     text-decoration: none;
+     color: black;
+   font-family:Arial, Helvetica, sans-serif;
+     font-weight: bolder;
+}
+.navbar_icons i{
+    display: none;
+    font-size: 2vw;
+    /* display: flex; */
+    align-items: center;
+
+}
+.nav_buttons{
+    display: flex;
+    align-items: center;
+   
+}
+.signinbtn      {
+    padding: 0.5vw 1.2vw;
+    font-size: 1.2vw;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.508);
+    color: rgb(239, 239, 239);
+    border: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+/* this is for the content box */
+.contents{
+    height: calc(100% - 94px);
+    width: 100%;
+    background: rgb(0, 0, 0);
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   min-height: 50%;
+}
+.content_left{
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4vw 2vw;
+    left: 10px;
+    position: relative;
+    z-index: 20;
+}
+.social_buttons{
+    position: relative;
+    z-index: 20;
+}
+.container h1{
+    color: rgb(255, 255, 255);
+    font-size: 3.4vw;
+    line-height: 3.8vw;
+}
+.container h1 span{
+    color: rgba(255, 255, 255, 0.809);;
+}
+.container h2{
+    font-size: 1.6vw;
+    padding-top: 1.8vw;
+    color: rgba(255, 255, 255, 0.607);
+    line-height: 2vw;
+}
+.container h3{
+    padding-top: 3vw;
+    font-size: 2.4vw;
+    color: rgba(255, 255, 255, 0.607);
+}
+.social_buttons{
+padding-top: 1.6vw;
+}
+.link_buttons{
+    padding-top: 1.5vw;
+}
+.link_buttons Button{
+padding: 1vw 3.6vw;
+font-size: 1.6vw;
+border-radius: 6px;
+border: none;
+align-items: center;
+justify-content: center;
+background-color: rgba(255, 255, 255, 0.096); 
+color: rgba(255, 255, 255, 0.607);
+border: 1px solid rgba(255, 255, 255, 0.304);;
+}
+.link_buttons Button:hover{
+    background-color: black;
+}
+
+.link_buttons .yt{
+    padding: 1vw 4.3vw;
+    font-size: 2vw;
+}
+.link_buttons .instagram a{
+    color: rgba(255, 255, 255, 0.607);
+    text-decoration: none;
+    font-size: 2vw;
+}
+.link_buttons .yt a{
+    color: rgba(255, 255, 255, 0.607);
+    text-decoration: none;
+}
+
+.content_right{
+    height: 100%;
+    width: 50%;
+    /* background-color: yellow; */
+    position: relative;
+    /* display: flex; */
+}
+.right_container {
+    width: 100%;
+    /* height: 100%; */
+   justify-content: center;
+ 
+    display: flex;
+    /* background-color: aqua; */
+    padding: 3vw 1vw;
+    flex-wrap: wrap;
+    position: relative;
+}
+ video{
+    width: 20vw;
+    margin: 1.4vw;
+    border-radius: 4px;
+    border: 1.5px solid white;
+    
+}
+
+.blackbox{
+    height: auto;
+    width: 100%;
+    background-color: rgba(152, 25, 25, 0.295);
+    position: absolute;
+    top: 0;
+    
+    display: flex;
+    align-items: end;
+}
+#vdwon{
+    margin-top: 1.4vw;
+}
+
+/* this is for the media quries */
+@media (max-width:600px){
+.navbar_icons i{
+    display: block;
+    font-size: 26.5px;
+    
+}
+.navbar{
+    padding: 5vw;
+}
+.options a{
+    display: none;
+}
+.navbar .logo{
+    font-size: 26.5px;
+
+   
+}
+.nav_buttons button{
+    display: none;
+}
+.contents{
+    height: calc(100% - 10px);
+    width: 100%;
+    background: rgb(0, 0, 0);
+   display:flex;
+   flex-direction: column;
+   /* position: fixed; */
+   /* justify-content: center; */
+   padding-top: 40px;
+   align-items: center;
+   overflow: hidden;
+   
+}
+.blackbox{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.container{
+    position: relative;
+    /* flex-wrap: wrap; */
+    
+}
+.container h1 {
+    font-size: 6.3vw;
+    padding: 2vw;
+    /* padding-right: 5vw; */
+}
+.link_buttons .yt a {
+    font-size: 4vw;
+}
+.link_buttons .instagram a {
+    font-size: 4vw;
+}
+.container h2 {
+    font-size: 3vw;
+}
+.content_left {
+    height: 28%;
+    width: 108%;
+    /* background-color: red; */
+}
+ 
+    .container h2 {
+        font-size: 3vw;
+        padding: 6.5vw;
+        padding-top: 3vw;
+        line-height: 4vw;
+    }
+    .container h3 {
+        padding-top: 2vw;
+        font-size: 5.4vw;
+        color: rgba(255, 255, 255, 0.607);}
+.content_right{
+    margin-top: 40px;
+    width: 100%;
+}
+.right_container{
+    flex-wrap: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+video{
+    /* height: 33.3%; */
+    width: 60vw;
+}
+.contents{
+    height: 100%;
+    width: 100%;
+}
+}
